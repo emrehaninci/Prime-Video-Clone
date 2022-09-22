@@ -1,0 +1,266 @@
+.logo{
+    display: block;
+    height: 35px;
+    margin: 0px 10px 10px 0px;
+}
+
+.logo:hover{
+    cursor: pointer;
+}
+
+.header{
+    display: flex;
+    position: fixed;
+    z-index: 15;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+    padding: 10px 60px 10px 40px;
+    background-color: rgb(26, 36, 46);
+}
+
+.header-left{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.header-menu{
+    display: inline-block;
+    list-style: none;
+    margin: -8px 0px 10px 20px;
+    padding: 0px;
+}
+
+.header-menu #menu{
+    display: inline;
+    margin: 0px 14px 0px 0px;
+    font-family: 'Amazon Ember Display', sans-serif;
+    font-size: 16px;
+}
+
+.header-menu li:hover{
+    cursor: pointer;
+}
+
+.main-page{
+    font-weight: bold;
+    color: white;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding-bottom: 3px;
+}
+
+.header-right{
+    display: flex;
+    align-items: center;
+}
+
+.search-bar{
+    display: inline;
+    color: white;
+    background-color: rgb(24, 34, 44);
+    background: url(/images/search.svg) left no-repeat;
+    background-position-x: 6px;
+    border-style: solid;
+    border-color: rgb(112, 112, 112);
+    border-width: 1px;
+    height: 35px;
+    width: 230px;
+    font-size: 16px;
+    text-indent: 34px;
+
+}
+
+.search-bar:hover{
+    cursor: pointer;
+    border-color: rgb(175, 175, 175);
+}
+
+.search-bar::placeholder{
+    color: rgb(179, 179, 179);
+}
+
+.profile-picture{
+    height: 30px;
+    margin-left: 16px;
+    margin-right: 10px;
+}
+
+.profile-picture:hover{
+    cursor: pointer;
+}
+
+.profile-text{
+    transition: color 0.3s;
+    padding: 20px 0px;
+    vertical-align: middle;
+}
+
+.profile-text:hover{
+    cursor: pointer;
+    color: white;
+}
+
+.profile-text:hover .profile-menu{
+    display: block;
+}
+
+#transparent-overlay{
+    display: none;
+    position: fixed;
+    top: 80px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+
+.profile-text:hover ~ #transparent-overlay{
+    display: block;
+}
+
+.profile-menu{
+    display: none;
+    position: absolute;
+    z-index: 14;
+    list-style: none;
+    columns: 2;
+    top: 50px;
+    right: 50px;
+    padding: 15px 10px 15px 20px;
+    background-color: rgb(37, 46, 57);
+    column-count: 2;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+
+}
+
+.profile-menu li{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: rgb(196, 202, 207);
+    width: 170px;
+    height: 40px;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+    vertical-align: middle;
+}
+
+.profile-menu li:hover{
+    cursor: pointer;
+    color: white;
+}
+
+#account-1, #account-2{
+    content: '';
+    height: 40px;
+    width: 36px;
+    background-size: 36px; 	
+    padding-left: 46px;
+    background-position: left;
+    background-repeat:no-repeat;
+    background-image: url("/images/avatar-1.png");
+}
+
+#account-2{
+    background-image: url("/images/avatar-2.png");
+}
+
+.categories:hover .categories-popup{
+    display: grid;
+    cursor: default;
+}
+
+
+.categories-popup{
+    display: none;
+    position: absolute;
+    grid-template-columns: 550px 1fr;
+    z-index: 10;
+    margin-top: 30px;
+    margin-left: -200px;
+    padding-left: 200px;
+    padding-top: 10px;
+    width: 100%;
+    height: 360px;
+    background: linear-gradient(0deg, rgba(18,32,44,1) 0%, rgba(15,25,33,1) 100%);
+}
+
+
+
+.best-categories-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 0px;
+}
+
+.best-categories-content li{
+    list-style-type: none;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    margin: 10px;
+    text-align: center;
+    vertical-align: middle;
+    width: 160px;
+    height: 60px;
+    float: left;
+    border-radius: 5px;    
+    background: url("/images/Amazon-Originals.png") no-repeat;
+    background-size: cover;  
+    font-family: 'Amazon Ember Display', sans-serif;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+
+}
+
+.best-categories-content li:hover{
+    position: relative;
+    cursor: pointer;
+    border: solid;
+    top: -2px;
+    left: -2px;
+    margin-bottom: -2px;
+    margin-right: -2px;
+    border-width: 2px;
+    border-color: white;
+}
+
+.categories-left-panel{
+    display: inline-block;
+}
+
+.categories-right-panel{
+    padding-left: 70px;
+    display: grid;
+    grid-template-columns: 330px 1fr;
+}
+
+.genres-content {
+    padding-left: 0px;
+    column-count: 2;
+    list-style: none;
+}
+
+.other-categories-content{
+    padding-left: 0px;
+    list-style: none;
+}
+
+.genres-content li,
+.other-categories-content li{
+    color: rgb(129, 151, 164);
+    margin-bottom: 12px;
+    margin-right: 0px;
+    transition: color 0.3s;
+
+}
+
+.genres-content li:hover,
+.other-categories-content li:hover{
+    cursor: pointer;
+    color: white;
+}
+
+

@@ -1,0 +1,165 @@
+.slider-area{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#slider:hover{
+    cursor:pointer;
+}
+
+.right-arrow{
+    z-index: 1;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    pointer-events:none;
+}
+
+
+.left-arrow{
+    z-index: 1;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    pointer-events:none;
+}
+
+
+.sliders{
+    padding-top: 75px;
+    height: 100%;
+    white-space: nowrap;
+    font-size: 0;
+    transition: 0.8s;
+}
+
+.sliders img{
+    font-size: 1rem;
+	display: inline-block;
+	white-space: normal;
+	vertical-align: top;
+	height: 100%;
+	width: 100%;
+	background: none 50% no-repeat;
+	background-size: cover;
+
+}
+
+
+.slider-area .bullets{
+    position: absolute;
+    bottom: 0;
+    padding: 10px 0px;
+    width: 100%;
+    text-align: center;
+}
+
+.bullets a {
+	display: inline-block;
+	width:       15px;
+	height:      15px;
+    margin-right: 5px;
+    border-radius: 15px;
+	text-decoration: none;
+	text-align: center;
+	background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+	-webkit-transition: 0.3s;
+					transition: 0.3s;
+}
+.bullets  a+a {
+	background: rgba(255, 255, 255, 0.5); /* Dim all but first */
+}
+.bullets  a:hover {
+	background: rgba(255, 255, 255, 0.7) !important;
+    
+}
+
+/* https://codepen.io/cferdinandi/pen/GRJvozN */
+/* NAVIGATION BUTTONS */
+/* ALL: */
+.slider-area >s:target ~ .bullets >* {      background: rgba(255, 255, 255, 0.5);}
+/* ACTIVE */
+#s1:target ~ .bullets >*:nth-child(1) {background: rgba(255, 255, 255,   1);}
+#s2:target ~ .bullets >*:nth-child(2) {background: rgba(255, 255, 255,   1);}
+#s3:target ~ .bullets >*:nth-child(3) {background: rgba(255, 255, 255,   1);}
+#s4:target ~ .bullets >*:nth-child(4) {background: rgba(255, 255, 255,   1);}
+#s5:target ~ .bullets >*:nth-child(5) {background: rgba(255, 255, 255,   1);}
+#s6:target ~ .bullets >*:nth-child(6) {background: rgba(255, 255, 255,   1);}
+#s7:target ~ .bullets >*:nth-child(7) {background: rgba(255, 255, 255,   1);}
+#s8:target ~ .bullets >*:nth-child(8) {background: rgba(255, 255, 255,   1);}
+/* More slides? Add here more rules */
+
+/* SLIDER ANIMATION POSITIONS */
+
+#s1:target ~ .sliders {transform: translateX(   0%);}
+#s2:target ~ .sliders {transform: translateX(-100%);}
+#s3:target ~ .sliders {transform: translateX(-200%);}
+#s4:target ~ .sliders {transform: translateX(-300%);}
+#s5:target ~ .sliders {transform: translateX(-400%);}
+#s6:target ~ .sliders {transform: translateX(-500%);}
+#s7:target ~ .sliders {transform: translateX(-600%);}
+#s8:target ~ .sliders {transform: translateX(-700%);}
+/* More slides? Add here more rules */
+
+
+/* PREV/NEXT, CONTAINERS & ANCHORS */
+
+.slider-area .prevNext {
+	position: absolute;
+    top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.slider-area .prevNext > div+div {
+	visibility: hidden; /* Hide all but first P/N container */
+}
+
+.slider-area .prevNext a {
+	position: absolute;
+	width:       3%;
+	height:      100%;
+}
+
+.slider-area .prevNext a+a {
+	left: auto;
+	right: 0;
+}
+
+#sliderPrev,
+#sliderNext{
+    opacity: 0;
+}
+
+.prevNext #sliderPrev,
+.prevNext #sliderNext{
+    transition: opacity 0.5s ease;
+    
+}
+
+#sliderPrev:hover{
+    opacity: 0.8;
+    background: linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%);
+}
+
+#sliderNext:hover{
+    opacity: 0.8;
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%);
+}
+
+/* PREV/NEXT CONTAINERS VISIBILITY */
+/* ALL: */
+.sliders >s:target ~ .prevNext >* {      visibility: hidden;}
+/* ACTIVE: */
+#s1:target ~ .prevNext >*:nth-child(1) {visibility: visible;}
+#s2:target ~ .prevNext >*:nth-child(2) {visibility: visible;}
+#s3:target ~ .prevNext >*:nth-child(3) {visibility: visible;}
+#s4:target ~ .prevNext >*:nth-child(4) {visibility: visible;}
+#s5:target ~ .prevNext >*:nth-child(5) {visibility: visible;}
+#s6:target ~ .prevNext >*:nth-child(6) {visibility: visible;}
+#s7:target ~ .prevNext >*:nth-child(7) {visibility: visible;}
+#s8:target ~ .prevNext >*:nth-child(8) {visibility: visible;}
+/* More slides? Add here more rules */

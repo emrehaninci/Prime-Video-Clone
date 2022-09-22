@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prime Video</title>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/x-icon" href="images/favicon.png">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/slider.css">
+        <link rel="stylesheet" href="styles/contents.css">
+        <link rel="stylesheet" href="styles/footer.css">
+        <link href="http://fonts.cdnfonts.com/css/amazon-ember" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="header">
+            <div class="header-left">
+                <img class="logo" src="images/logo.svg">
+                <ul class="header-menu">
+                    <li id="menu" class="main-page">Anasayfa</li>
+                    <li id="menu" class="tv-series">TV Dizileri</li>
+                    <li id="menu" class="movies">Filmler</li>
+                    <li id="menu" class="categories" style="padding-bottom:40px;">Kategoriler &#9662;
+                        <div class="categories-popup">
+                            <div class="categories-left-panel">
+                                <p style="color: white; font-size:18px">En iyi kategoriler</p>
+                                <ul class="best-categories-content">
+                                    <li>Amazon Orijinal İçerikleri</li>
+                                    <li style="padding-top:45px; padding-bottom: 5px;">Çocuk</li>
+                                    <li>Prime Video'ya son eklenen filmler</li>
+                                    <li>Prime Video'ya son eklenen diziler</li>
+                                </ul>
+                            </div>
+                            <div class="categories-right-panel">
+        
+                                <div class="genres">
+                                    <p style="color: white; font-size:18px">Türler</p>
+                                    <ul class="genres-content">
+                                        <li>Aksiyon ve macera</li>
+                                        <li>Komedi</li>
+                                        <li>Dram</li>
+                                        <li>Belgesel</li>
+                                        <li>Çocuklar ve aile</li>
+                                        <li>Fantastik</li>
+                                        <li>Korku</li>
+                                        <li>Romantik</li>
+                                        <li>Bilim kurgu</li>
+                                        <li>Gerilim</li>
+                                        <li>Anime</li>
+                                        <li>Spor</li>
+                                        <li>Suç</li>
+                                    </ul>
+                                </div>
+        
+                                <div class="other-categories">
+                                    <p style="color: white; font-size:18px">Diğer kategoriler</p>
+                                    <ul class="other-categories-content">
+                                        <li>Ödül kazananlar</li>
+                                        <li>Yalnızca sınırlı bir süre için Prime’da</li>
+                                    </ul>
+                                </div>
+        
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-right">
+                <input class="search-bar" type="text" placeholder="Ara">
+                <img class="profile-picture" src="images/profile.png">
+                <div class="profile-text">Emrehan ▾
+                    <ul class="profile-menu">
+                        <li>İzleme Listeniz</li>
+                        <li>Hesap ve Ayarlar</li>
+                        <li>Nerede İsterseniz Orada İzleyin</li>
+                        <li>Yardım</li>
+                        <li>Emrehan? değil misiniz? Çıkış Yap</li>
+                        <li id="account-1">Emriyan</li>
+                        <li id="account-2">Çocuklar</li>
+                        <li>Yeni Ekle</li>
+                        <li>Profilleri düzenle</li>
+                        <li>Daha fazla bilgi edinin</li>
+                    </ul>
+                </div>
+                <div id="transparent-overlay"></div>
+            </div>
+
+        </div>
+
+
+        <div class="slider-area">
+            <s id="s1"></s> 
+            <s id="s2"></s>
+            <s id="s3"></s>
+            <s id="s4"></s>
+            <s id="s5"></s>
+            <s id="s6"></s>
+            <s id="s7"></s>
+            <s id="s8"></s>
+            <div class="sliders">
+                <img id="slider" src="sliders/slider-1.webp">
+                <img id="slider" src="sliders/slider-2.webp">
+                <img id="slider" src="sliders/slider-3.webp">
+                <img id="slider" src="sliders/slider-4.webp">
+                <img id="slider" src="sliders/slider-5.webp">
+                <img id="slider" src="sliders/slider-6.webp">
+                <img id="slider" src="sliders/slider-7.webp">
+                <img id="slider" src="sliders/slider-8.webp">
+                
+            </div>
+
+            <img class="left-arrow" src="images/left-arrow.svg">
+            <img class="right-arrow" src="images/right-arrow.svg">
+
+            <div class="prevNext">
+                <div><a href="#s8" id="sliderPrev"></a><a href="#s2" id="sliderNext"></a></div>
+                <div><a href="#s1" id="sliderPrev"></a><a href="#s3" id="sliderNext"></a></div>
+                <div><a href="#s2" id="sliderPrev"></a><a href="#s4" id="sliderNext"></a></div>
+                <div><a href="#s3" id="sliderPrev"></a><a href="#s5" id="sliderNext"></a></div>
+                <div><a href="#s4" id="sliderPrev"></a><a href="#s6" id="sliderNext"></a></div>
+                <div><a href="#s5" id="sliderPrev"></a><a href="#s7" id="sliderNext"></a></div>
+                <div><a href="#s6" id="sliderPrev"></a><a href="#s8" id="sliderNext"></a></div>
+                <div><a href="#s7" id="sliderPrev"></a><a href="#s1" id="sliderNext"></a></div>
+              </div>
+
+            <div class="bullets">
+                <a href="#s1"></a>
+                <a href="#s2"></a>
+                <a href="#s3"></a>
+                <a href="#s4"></a>
+                <a href="#s5"></a>
+                <a href="#s6"></a>
+                <a href="#s7"></a>
+                <a href="#s8"></a>
+              </div>
+        </div>
+
+        <div class="all-contents-area">
+            <!-- İzlemeye Devam Et -->
+            <div class="content-area">
+                <p class="content-title">İzlemeye Devam Et</p>
+                <div class="content-grid">
+    
+                    <div class="content">
+                        <div class="content-container">
+                            <div class="image-container">
+                                <img class="content-image" src="content-pics/content-1.webp">
+                                <div class="content-image-shadow"></div>
+                                <div class="content-buttons">
+                                    <a href="#" class="play-button">
+                                        <i class="fa fa-play fa-2x"></i>
+                                    </a>
+                                    <p class="play-text">Oynat</p>
+                                    <div class="add-icon">
+                                        <img src="icons/plus.png" >
+                                        <p class="add-tooltip">Sezonu İzleme Listesine Ekle</p>
+                                    </div>
+                                    <div class="hide-icon">
+                                        <img  src="icons/cancel.png" >
+                                        <p class="hide-tooltip">Bu İçeriği Gizle</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-description">
+                                <p class="prime-text">Prime'a Dahil</p>
+                                <p class="content-tooltip-title">Yüzüklerin Efendisi: Güç Yüzükleri - 1. Sezon</p>
+                                <p class="content-tooltip-description">Göreceli bir barış döneminden başlayarak, Orta Dünya'ya geri dönen kötülükle yüzleşen bir dizi karakteri izleyeceğiz.</p>
+                                <div class="content-bottom">
+                                    <p style="font-size: 13px; color:white;">2022</p>
+                                    <img src="icons/subtitles.png">
+                                    <div >
+                                        <p class="content-bottom-age-rating">13+</p>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="content">
+                        <div class="content-container">
+                            <div class="image-container">
+                                <img class="content-image" src="content-pics/content-2.webp">
+                                <div class="content-image-shadow"></div>
+                                <div class="content-buttons">
+                                    <a href="#" class="play-button">
+                                        <i class="fa fa-play fa-2x"></i>
+                                    </a>
+                                    <p class="play-text">Oynat</p>
+                                    <div class="add-icon">
+                                        <img src="icons/plus.png" >
+                                        <p class="add-tooltip">Sezonu İzleme Listesine Ekle</p>
+                                    </div>
+                                    <div class="hide-icon">
+                                        <img  src="icons/cancel.png" >
+                                        <p class="hide-tooltip">Bu İçeriği Gizle</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-description">
+                                <p class="prime-text">Prime'a Dahil</p>
+                                <p class="content-tooltip-title">The Boys - 1. Sezon</p>
+                                <p class="content-tooltip-description">THE BOYS ünlüler kadar popüler, politikacılar kadar etkili ve Tanrılar kadar saygı gören süper kahramanlar süper...</p>
+                                <div class="content-bottom">
+                                    <p style="font-size: 13px; color:white;">2019</p>
+                                    <img src="icons/subtitles.png">
+                                    <div >
+                                        <p class="content-bottom-age-rating">18+</p>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="content">
+                        <div class="content-container">
+                            <div class="image-container">
+                                <img class="content-image" src="content-pics/content-3.webp">
+                                <div class="content-image-shadow"></div>
+                                <div class="content-buttons">
+                                    <a href="#" class="play-button">
+                                        <i class="fa fa-play fa-2x"></i>
+                                    </a>
+                                    <p class="play-text">Oynat</p>
+                                    <div class="add-icon">
+                                        <img src="icons/plus.png" >
+                                        <p class="add-tooltip">Sezonu İzleme Listesine Ekle</p>
+                                    </div>
+                                    <div class="hide-icon">
+                                        <img  src="icons/cancel.png" >
+                                        <p class="hide-tooltip">Bu İçeriği Gizle</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-description">
+                                <p class="prime-text">Prime'a Dahil</p>
+                                <p class="content-tooltip-title">Modern Aşk - 2. Sezon</p>
+                                <p class="content-tooltip-description">Aşk kural tanımaz. Bu antoloji dizisinin her bölümü ilişkiler, bağlar, ihanetler ve aydınlanışlarla ilgili farklı hikâyeleri...</p>
+                                <div class="content-bottom">
+                                    <p style="font-size: 13px; color:white;">2021</p>
+                                    <img src="icons/subtitles.png">
+                                    <div >
+                                        <p class="content-bottom-age-rating">16+</p>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="content">
+                        <div class="content-container">
+                            <div class="image-container">
+                                <img class="content-image" src="content-pics/content-4.webp">
+                                <div class="content-image-shadow"></div>
+                                <div class="content-buttons">
+                                    <a href="#" class="play-button">
+                                        <i class="fa fa-play fa-2x"></i>
+                                    </a>
+                                    <p class="play-text">Oynat</p>
+                                    <div class="add-icon">
+                                        <img src="icons/plus.png" >
+                                        <p class="add-tooltip">Sezonu İzleme Listesine Ekle</p>
+                                    </div>
+                                    <div class="hide-icon">
+                                        <img  src="icons/cancel.png" >
+                                        <p class="hide-tooltip">Bu İçeriği Gizle</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-description">
+                                <p class="prime-text">Prime'a Dahil</p>
+                                <p class="content-tooltip-title">The Purge</p>
+                                <p class="content-tooltip-description">Sizin için bir sonucu olmayacağını bildiğiniz herangi bir suçu işleme olanağınız olsaydı ne yapardınız?...</p>
+                                <div class="content-bottom">
+                                    <p style="font-size: 13px; color:white;">2013</p>
+                                    <img src="icons/subtitles.png">
+                                    <div >
+                                        <p class="content-bottom-age-rating">13+</p>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="content">
+                        <div class="content-container">
+                            <div class="image-container">
+                                <img class="content-image" src="content-pics/content-5.webp">
+                                <div class="content-image-shadow"></div>
+                                <div class="content-buttons">
+                                    <a href="#" class="play-button">
+                                        <i class="fa fa-play fa-2x"></i>
+                                    </a>
+                                    <p class="play-text">Oynat</p>
+                                    <div class="add-icon">
+                                        <img src="icons/plus.png" >
+                                        <p class="add-tooltip">Sezonu İzleme Listesine Ekle</p>
+                                    </div>
+                                    <div class="hide-icon">
+                                        <img  src="icons/cancel.png" >
+                                        <p class="hide-tooltip">Bu İçeriği Gizle</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-description">
+                                <p class="prime-text">Prime'a Dahil</p>
+                                <p class="content-tooltip-title">Sherlock: Series 1</p>
+                                <p class="content-tooltip-description">Sherlock Holmes ve Doktor Watson'ın maceraları 21. yüzyıl Londra'sına geliyor...</p>
+                                <div class="content-bottom">
+                                    <p style="font-size: 13px; color:white;">2010</p>
+                                    <img src="icons/subtitles.png">
+                                    <div >
+                                        <p class="content-bottom-age-rating">16+</p>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+    
+            <!-- Amazon Orijinal ve Özel İçerikler -->
+            <div class="content-area">
+                <p class="content-title">Amazon Orijinal ve Özel İçerikler</p>
+                <div class="content-grid">
+                    
+                    <div class="content">
+                        <div class="content-container">
+                            <div class="image-container">
+                                <img class="content-image" src="content-pics/content-6.webp">
+                                <div class="content-image-shadow"></div>
+                                <div class="content-buttons">
+                                    <a href="#" class="play-button">
+                                        <i class="fa fa-play fa-2x"></i>
+                                    </a>
+                                    <p class="play-text">Oynat</p>
+                                    <div class="add-icon">
+                                        <img src="icons/plus.png" >
+                                        <p class="add-tooltip">Sezonu İzleme Listesine Ekle</p>
+                                    </div>
+                                    <div class="hide-icon">
+                                        <img  src="icons/cancel.png" >
+                                        <p class="hide-tooltip">Bu İçeriği Gizle</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-description">
+                                <p class="prime-text">Prime'a Dahil</p>
+                                <p class="content-tooltip-title">The Grand Tour - 5. Sezon</p>
+                                <p class="content-tooltip-description">Pandemi sonrası ilk yolculuklarında Jeremy, Richard ve James, İskandinav Kuzey Kutup Dairesi'nin ıssız kesimlerine...</p>
+                                <div class="content-bottom">
+                                    <p style="font-size: 13px; color:white;">2022</p>
+                                    <img src="icons/subtitles.png">
+                                    <div >
+                                        <p class="content-bottom-age-rating">16+</p>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="content">
+                        <div class="content-container">
+                            <div class="image-container">
+                                <img class="content-image" src="content-pics/content-7.webp">
+                                <div class="content-image-shadow"></div>
+                                <div class="content-buttons">
+                                    <a href="#" class="play-button">
+                                        <i class="fa fa-play fa-2x"></i>
+                                    </a>
+                                    <p class="play-text">Oynat</p>
+                                    <div class="add-icon">
+                                        <img src="icons/plus.png" >
+                                        <p class="add-tooltip">Sezonu İzleme Listesine Ekle</p>
+                                    </div>
+                                    <div class="hide-icon">
+                                        <img  src="icons/cancel.png" >
+                                        <p class="hide-tooltip">Bu İçeriği Gizle</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-description">
+                                <p class="prime-text">Prime'a Dahil</p>
+                                <p class="content-tooltip-title">İyi Geceler Anne</p>
+                                <p class="content-tooltip-description">İkiz kardeşler, annelerinin kır evine vardıklarında yüzünün bandajlarla sarılı olduğunu fark ederler. Anneleri kozmetik...</p>
+                                <div class="content-bottom">
+                                    <p style="font-size: 13px; color:white;">2022</p>
+                                    <img src="icons/subtitles.png">
+                                    <div >
+                                        <p class="content-bottom-age-rating">16+</p>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="content">
+                        <div class="content-container">
+                            <div class="image-container">
+                                <img class="content-image" src="content-pics/content-9.webp">
+                                <div class="content-image-shadow"></div>
+                                <div class="content-buttons">
+                                    <a href="#" class="play-button">
+                                        <i class="fa fa-play fa-2x"></i>
+                                    </a>
+                                    <p class="play-text">Oynat</p>
+                                    <div class="add-icon">
+                                        <img src="icons/plus.png" >
+                                        <p class="add-tooltip">Sezonu İzleme Listesine Ekle</p>
+                                    </div>
+                                    <div class="hide-icon">
+                                        <img  src="icons/cancel.png" >
+                                        <p class="hide-tooltip">Bu İçeriği Gizle</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-description">
+                                <p class="prime-text">Prime'a Dahil</p>
+                                <p class="content-tooltip-title">Uçuş/Riski</p>
+                                <p class="content-tooltip-description">Uçuş/Riski, 2018 ve 2019 yıllarında, sadece beş ay arayla iki 737 Max uçağı kaza yapınca kendilerini küresel bir...</p>
+                                <div class="content-bottom">
+                                    <p style="font-size: 13px; color:white;">2022</p>
+                                    <img src="icons/subtitles.png">
+                                    <div >
+                                        <p class="content-bottom-age-rating">13+</p>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="content">
+                        <div class="content-container">
+                            <div class="image-container">
+                                <img class="content-image" src="content-pics/content-10.webp">
+                                <div class="content-image-shadow"></div>
+                                <div class="content-buttons">
+                                    <a href="#" class="play-button">
+                                        <i class="fa fa-play fa-2x"></i>
+                                    </a>
+                                    <p class="play-text">Oynat</p>
+                                    <div class="add-icon">
+                                        <img src="icons/plus.png" >
+                                        <p class="add-tooltip">Sezonu İzleme Listesine Ekle</p>
+                                    </div>
+                                    <div class="hide-icon">
+                                        <img  src="icons/cancel.png" >
+                                        <p class="hide-tooltip">Bu İçeriği Gizle</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-description">
+                                <p class="prime-text">Prime'a Dahil</p>
+                                <p class="content-tooltip-title">Fleabag - 1. Sezon</p>
+                                <p class="content-tooltip-description">Fleabag, kendini Londra’da modern yaşamın ortasına atan; zeki, cazibeli, sinirli ve kederden yerle bir olmuş bir kadının...</p>
+                                <div class="content-bottom">
+                                    <p style="font-size: 13px; color:white;">2016</p>
+                                    <img src="icons/subtitles.png">
+                                    <div >
+                                        <p class="content-bottom-age-rating">18+</p>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="content">
+                        <div class="content-container">
+                            <div class="image-container">
+                                <img class="content-image" src="content-pics/content-8.webp">
+                                <div class="content-image-shadow"></div>
+                                <div class="content-buttons">
+                                    <a href="#" class="play-button">
+                                        <i class="fa fa-play fa-2x"></i>
+                                    </a>
+                                    <p class="play-text">Oynat</p>
+                                    <div class="add-icon">
+                                        <img src="icons/plus.png" >
+                                        <p class="add-tooltip">Sezonu İzleme Listesine Ekle</p>
+                                    </div>
+                                    <div class="hide-icon">
+                                        <img  src="icons/cancel.png" >
+                                        <p class="hide-tooltip">Bu İçeriği Gizle</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-description">
+                                <p class="prime-text">Prime'a Dahil</p>
+                                <p class="content-tooltip-title">ÖZEL İLİŞKİLER. 1. SEZON</p>
+                                <p class="content-tooltip-description">1940'lar, Galiçya. Dedektif ruhu taşııyan üst sınıfa mensup Marina Quiroga, sadık uşağı Hektor'un yardımıyla şehire dehşet...</p>
+                                <div class="content-bottom">
+                                    <p style="font-size: 13px; color:white;">2022</p>
+                                    <img src="icons/subtitles.png">
+                                    <div >
+                                        <p class="content-bottom-age-rating">16+</p>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+    
+    
+                </div>
+            </div>
+
+            <!-- alt yazılı TV dizileri ve filmler -->
+            <div class="content-area">
+                <p class="content-title">alt yazılı TV dizileri ve filmler</p>
+                <div class="content-grid">
+                    
+                    <div class="content">
+                        <div class="content-container">
+                            <div class="image-container">
+                                <img class="content-image" src="content-pics/content-11.webp">
+                                <div class="content-image-shadow"></div>
+                                <div class="content-buttons">
+                                    <a href="#" class="play-button">
+                                        <i class="fa fa-play fa-2x"></i>
+                                    </a>
+                                    <p class="play-text">Oynat</p>
+                                    <div class="add-icon">
+                                        <img src="icons/plus.png" >
+                                        <p class="add-tooltip">Sezonu İzleme Listesine Ekle</p>
+                                    </div>
+                                    <div class="hide-icon">
+                                        <img  src="icons/cancel.png" >
+                                        <p class="hide-tooltip">Bu İçeriği Gizle</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-description">
+                                <p class="prime-text">Prime'a Dahil</p>
+                                <p class="content-tooltip-title">Lorem Ipsum</p>
+                                <p class="content-tooltip-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 1500s...</p>
+                                <div class="content-bottom">
+                                    <p style="font-size: 13px; color:white;">2022</p>
+                                    <img src="icons/subtitles.png">
+                                    <div >
+                                        <p class="content-bottom-age-rating">16+</p>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="content">
+                        <div class="content-container">
+                            <div class="image-container">
+                                <img class="content-image" src="content-pics/content-12.webp">
+                                <div class="content-image-shadow"></div>
+                                <div class="content-buttons">
+                                    <a href="#" class="play-button">
+                                        <i class="fa fa-play fa-2x"></i>
+                                    </a>
+                                    <p class="play-text">Oynat</p>
+                                    <div class="add-icon">
+                                        <img src="icons/plus.png" >
+                                        <p class="add-tooltip">Sezonu İzleme Listesine Ekle</p>
+                                    </div>
+                                    <div class="hide-icon">
+                                        <img  src="icons/cancel.png" >
+                                        <p class="hide-tooltip">Bu İçeriği Gizle</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-description">
+                                <p class="prime-text">Prime'a Dahil</p>
+                                <p class="content-tooltip-title">Lorem Ipsum</p>
+                                <p class="content-tooltip-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 1500s..</p>
+                                <div class="content-bottom">
+                                    <p style="font-size: 13px; color:white;">2022</p>
+                                    <img src="icons/subtitles.png">
+                                    <div >
+                                        <p class="content-bottom-age-rating">16+</p>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="content">
+                        <div class="content-container">
+                            <div class="image-container">
+                                <img class="content-image" src="content-pics/content-13.webp">
+                                <div class="content-image-shadow"></div>
+                                <div class="content-buttons">
+                                    <a href="#" class="play-button">
+                                        <i class="fa fa-play fa-2x"></i>
+                                    </a>
+                                    <p class="play-text">Oynat</p>
+                                    <div class="add-icon">
+                                        <img src="icons/plus.png" >
+                                        <p class="add-tooltip">Sezonu İzleme Listesine Ekle</p>
+                                    </div>
+                                    <div class="hide-icon">
+                                        <img  src="icons/cancel.png" >
+                                        <p class="hide-tooltip">Bu İçeriği Gizle</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-description">
+                                <p class="prime-text">Prime'a Dahil</p>
+                                <p class="content-tooltip-title">Lorem Ipsum</p>
+                                <p class="content-tooltip-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 1500s..</p>
+                                <div class="content-bottom">
+                                    <p style="font-size: 13px; color:white;">2022</p>
+                                    <img src="icons/subtitles.png">
+                                    <div >
+                                        <p class="content-bottom-age-rating">13+</p>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="content">
+                        <div class="content-container">
+                            <div class="image-container">
+                                <img class="content-image" src="content-pics/content-14.webp">
+                                <div class="content-image-shadow"></div>
+                                <div class="content-buttons">
+                                    <a href="#" class="play-button">
+                                        <i class="fa fa-play fa-2x"></i>
+                                    </a>
+                                    <p class="play-text">Oynat</p>
+                                    <div class="add-icon">
+                                        <img src="icons/plus.png" >
+                                        <p class="add-tooltip">Sezonu İzleme Listesine Ekle</p>
+                                    </div>
+                                    <div class="hide-icon">
+                                        <img  src="icons/cancel.png" >
+                                        <p class="hide-tooltip">Bu İçeriği Gizle</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-description">
+                                <p class="prime-text">Prime'a Dahil</p>
+                                <p class="content-tooltip-title">Lorem Ipsum</p>
+                                <p class="content-tooltip-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 1500s..</p>
+                                <div class="content-bottom">
+                                    <p style="font-size: 13px; color:white;">2016</p>
+                                    <img src="icons/subtitles.png">
+                                    <div >
+                                        <p class="content-bottom-age-rating">18+</p>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="content">
+                        <div class="content-container">
+                            <div class="image-container">
+                                <img class="content-image" src="content-pics/content-15.webp">
+                                <div class="content-image-shadow"></div>
+                                <div class="content-buttons">
+                                    <a href="#" class="play-button">
+                                        <i class="fa fa-play fa-2x"></i>
+                                    </a>
+                                    <p class="play-text">Oynat</p>
+                                    <div class="add-icon">
+                                        <img src="icons/plus.png" >
+                                        <p class="add-tooltip">Sezonu İzleme Listesine Ekle</p>
+                                    </div>
+                                    <div class="hide-icon">
+                                        <img  src="icons/cancel.png" >
+                                        <p class="hide-tooltip">Bu İçeriği Gizle</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-description">
+                                <p class="prime-text">Prime'a Dahil</p>
+                                <p class="content-tooltip-title">Lorem Ipsum</p>
+                                <p class="content-tooltip-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 1500s..</p>
+                                <div class="content-bottom">
+                                    <p style="font-size: 13px; color:white;">2022</p>
+                                    <img src="icons/subtitles.png">
+                                    <div >
+                                        <p class="content-bottom-age-rating">16+</p>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+        </div>
+
+                    <!-- En İyi TV İçerikleri -->
+                    <div class="content-area">
+                        <p class="content-title">En İyi TV İçerikleri</p>
+                        <div class="content-grid">
+                            
+                            <div class="content">
+                                <div class="content-container">
+                                    <div class="image-container">
+                                        <img class="content-image" src="content-pics/content-16.webp">
+                                        <div class="content-image-shadow"></div>
+                                        <div class="content-buttons">
+                                            <a href="#" class="play-button">
+                                                <i class="fa fa-play fa-2x"></i>
+                                            </a>
+                                            <p class="play-text">Oynat</p>
+                                            <div class="add-icon">
+                                                <img src="icons/plus.png" >
+                                                <p class="add-tooltip">Sezonu İzleme Listesine Ekle</p>
+                                            </div>
+                                            <div class="hide-icon">
+                                                <img  src="icons/cancel.png" >
+                                                <p class="hide-tooltip">Bu İçeriği Gizle</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content-description">
+                                        <p class="prime-text">Prime'a Dahil</p>
+                                        <p class="content-tooltip-title">Lorem Ipsum</p>
+                                        <p class="content-tooltip-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 1500s...</p>
+                                        <div class="content-bottom">
+                                            <p style="font-size: 13px; color:white;">2022</p>
+                                            <img src="icons/subtitles.png">
+                                            <div >
+                                                <p class="content-bottom-age-rating">16+</p>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="content">
+                                <div class="content-container">
+                                    <div class="image-container">
+                                        <img class="content-image" src="content-pics/content-17.webp">
+                                        <div class="content-image-shadow"></div>
+                                        <div class="content-buttons">
+                                            <a href="#" class="play-button">
+                                                <i class="fa fa-play fa-2x"></i>
+                                            </a>
+                                            <p class="play-text">Oynat</p>
+                                            <div class="add-icon">
+                                                <img src="icons/plus.png" >
+                                                <p class="add-tooltip">Sezonu İzleme Listesine Ekle</p>
+                                            </div>
+                                            <div class="hide-icon">
+                                                <img  src="icons/cancel.png" >
+                                                <p class="hide-tooltip">Bu İçeriği Gizle</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content-description">
+                                        <p class="prime-text">Prime'a Dahil</p>
+                                        <p class="content-tooltip-title">Lorem Ipsum</p>
+                                        <p class="content-tooltip-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 1500s..</p>
+                                        <div class="content-bottom">
+                                            <p style="font-size: 13px; color:white;">2022</p>
+                                            <img src="icons/subtitles.png">
+                                            <div >
+                                                <p class="content-bottom-age-rating">16+</p>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="content">
+                                <div class="content-container">
+                                    <div class="image-container">
+                                        <img class="content-image" src="content-pics/content-18.webp">
+                                        <div class="content-image-shadow"></div>
+                                        <div class="content-buttons">
+                                            <a href="#" class="play-button">
+                                                <i class="fa fa-play fa-2x"></i>
+                                            </a>
+                                            <p class="play-text">Oynat</p>
+                                            <div class="add-icon">
+                                                <img src="icons/plus.png" >
+                                                <p class="add-tooltip">Sezonu İzleme Listesine Ekle</p>
+                                            </div>
+                                            <div class="hide-icon">
+                                                <img  src="icons/cancel.png" >
+                                                <p class="hide-tooltip">Bu İçeriği Gizle</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content-description">
+                                        <p class="prime-text">Prime'a Dahil</p>
+                                        <p class="content-tooltip-title">Lorem Ipsum</p>
+                                        <p class="content-tooltip-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 1500s..</p>
+                                        <div class="content-bottom">
+                                            <p style="font-size: 13px; color:white;">2022</p>
+                                            <img src="icons/subtitles.png">
+                                            <div >
+                                                <p class="content-bottom-age-rating">13+</p>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="content">
+                                <div class="content-container">
+                                    <div class="image-container">
+                                        <img class="content-image" src="content-pics/content-19.webp">
+                                        <div class="content-image-shadow"></div>
+                                        <div class="content-buttons">
+                                            <a href="#" class="play-button">
+                                                <i class="fa fa-play fa-2x"></i>
+                                            </a>
+                                            <p class="play-text">Oynat</p>
+                                            <div class="add-icon">
+                                                <img src="icons/plus.png" >
+                                                <p class="add-tooltip">Sezonu İzleme Listesine Ekle</p>
+                                            </div>
+                                            <div class="hide-icon">
+                                                <img  src="icons/cancel.png" >
+                                                <p class="hide-tooltip">Bu İçeriği Gizle</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content-description">
+                                        <p class="prime-text">Prime'a Dahil</p>
+                                        <p class="content-tooltip-title">Lorem Ipsum</p>
+                                        <p class="content-tooltip-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 1500s..</p>
+                                        <div class="content-bottom">
+                                            <p style="font-size: 13px; color:white;">2016</p>
+                                            <img src="icons/subtitles.png">
+                                            <div >
+                                                <p class="content-bottom-age-rating">18+</p>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="content">
+                                <div class="content-container">
+                                    <div class="image-container">
+                                        <img class="content-image" src="content-pics/content-20.webp">
+                                        <div class="content-image-shadow"></div>
+                                        <div class="content-buttons">
+                                            <a href="#" class="play-button">
+                                                <i class="fa fa-play fa-2x"></i>
+                                            </a>
+                                            <p class="play-text">Oynat</p>
+                                            <div class="add-icon">
+                                                <img src="icons/plus.png" >
+                                                <p class="add-tooltip">Sezonu İzleme Listesine Ekle</p>
+                                            </div>
+                                            <div class="hide-icon">
+                                                <img  src="icons/cancel.png" >
+                                                <p class="hide-tooltip">Bu İçeriği Gizle</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content-description">
+                                        <p class="prime-text">Prime'a Dahil</p>
+                                        <p class="content-tooltip-title">Lorem Ipsum</p>
+                                        <p class="content-tooltip-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 1500s..</p>
+                                        <div class="content-bottom">
+                                            <p style="font-size: 13px; color:white;">2022</p>
+                                            <img src="icons/subtitles.png">
+                                            <div >
+                                                <p class="content-bottom-age-rating">16+</p>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                </div>
+        </div>
+
+
+        <footer>
+            <div class="footer-area">
+                <img class="footer-logo" src="images/bottom-logo.svg">
+                <div class="footer-text">
+                    <p>Koşullar ve Gizlilik Bildirimi</p>
+                    <p>Geri bildirimde bulunun</p>
+                    <p>Yardım</p>
+                    <p>Çerez Bildirimi</p>
+                    <p style="color: rgb(129, 151, 164); cursor: default;">© 1996-2022, Amazon.com, Inc. veya bağlı kuruluşları</p>
+
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

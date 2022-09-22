@@ -1,0 +1,29 @@
+.footer-area{
+    display: flex;
+    flex-direction: column;
+    margin: 80px 20px 20px 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-area p{
+    font-size: 14px;
+    color: rgb(121, 184, 243);
+    display: inline;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.footer-area p:hover{
+    color: rgb(144, 223, 240);
+    cursor: pointer;
+}
+
+.footer-logo{
+    width: 100px;
+}
+
+.footer-text{
+    display: flex;
+    flex-direction: row;
+}
